@@ -1,1 +1,71 @@
 @import 'reset.css';
+
+body{
+    background-image:url("https://source.unsplash.com/category/coffee");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    height: 100vh;
+    /*vh는 브라우저 높이에 대한 상대적 수치를 뜻함*/
+    color:white;
+    display:flex;
+    flex-direction:column;
+    
+}
+
+header {
+    display:flex;
+    justify-content:flex-end;
+    font-family: 'Nanum Pen Script', cursive;
+
+
+}
+
+main{
+    flex:1;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Nanum Pen Script', cursive;
+    /*align -> 축, justify-content -> 아이템 !!! 잘 확인*/
+}
+
+.weather{
+    display:flex;
+    margin:1em;
+}
+
+.city{
+    font-size:2em;
+    font-family: 'Nanum Pen Script', cursive;
+    margin-top:.3em;
+    text-align:right;
+}
+.greeting{
+    font-size:1.6em;
+   
+}
+.clock{
+    font-size:8em;
+    font-weight:lighter;
+    font-family: 'Nanum Pen Script', cursive;
+    /*lighter light bold bolder*/
+}
+
+.info{
+    display:flex;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+input{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size:1em;
+   width:1.5em;
+outline:none;
+background:none;
+border:none;
+color:white;
+border-bottom:white .2em solid;
+}
